@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "title": "Verify Injection mitigation",
+    "description": "Injection of malicious code/data",
+    "steps": [
+      "Set up test environment for Input handlers",
+      "Attempt to exploit injection",
+      "Monitor for security violations or unauthorized actions",
+      "Verify that preventive controls block the attack"
+    ],
+    "expected_result": "The system should either prevent the Injection attack or detect and log it appropriately. No unauthorized access should be granted.",
+    "owasp": "A03:2021",
+    "priority": "P1",
+    "cvss_score": 9.0,
+    "cve_reference": "CVE-2000-1233",
+    "_has_real_cvss": true,
+    "metric": {
+      "cvss": 9.0,
+      "cwe": "",
+      "cvss_source": "CVE"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Verify Broken Access Control mitigation",
+    "description": "Unauthorized access to resources",
+    "steps": [
+      "Set up test environment for Authorization layer",
+      "Attempt to exploit broken access control",
+      "Monitor for security violations or unauthorized actions",
+      "Verify that preventive controls block the attack"
+    ],
+    "expected_result": "The system should either prevent the Broken Access Control attack or detect and log it appropriately. No unauthorized access should be granted.",
+    "owasp": "A01:2021",
+    "priority": "P2",
+    "cvss_score": 7.5,
+    "cve_reference": "CVE-2017-4942",
+    "_has_real_cvss": true,
+    "metric": {
+      "cvss": 7.5,
+      "cwe": "",
+      "cvss_source": "CVE"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Verify Identification and Authentication Failures mitigation",
+    "description": "Broken authentication mechanisms",
+    "steps": [
+      "Set up test environment for Authentication",
+      "Attempt to exploit identification and authentication failures",
+      "Monitor for security violations or unauthorized actions",
+      "Verify that preventive controls block the attack"
+    ],
+    "expected_result": "The system should either prevent the Identification and Authentication Failures attack or detect and log it appropriately. No unauthorized access should be granted.",
+    "owasp": "A07:2021",
+    "priority": "P2",
+    "cvss_score": 7.5,
+    "cve_reference": null,
+    "_has_real_cvss": false,
+    "metric": {
+      "cvss": 7.5,
+      "cwe": "",
+      "cvss_source": "OWASP_severity"
+    }
+  }
+]
